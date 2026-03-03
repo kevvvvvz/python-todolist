@@ -10,7 +10,6 @@ def main():
     #label.pack()
     #root.mainloop()
     #menucheck()
-    guiTask()
     while True:
         try:
             choice = int(input("Enter a number for your task of choice: "))
@@ -130,25 +129,6 @@ def taskComplete():
                 for row in newrows:
                     writer.writerow(row)
     
-
-def guiTask():
-    root = tk.Tk()
-    root.title("To-Do List")
-    frame = tk.Frame(root)
-    frame.pack(padx=30, pady=30)
-    btn_add = tk.Button(root, text="Add Task", command=addTask)
-    btn_add.pack()
-    
-    btn_add = tk.Button(root, text="View Task", command=addTask)
-    btn_add.pack()
-    
-    btn_add = tk.Button(root, text="Remove Task", command=addTask)
-    btn_add.pack()
-    
-    btn_add = tk.Button(root, text="Mark Task as Complete", command=addTask)
-    btn_add.pack()
-    
-    root.mainloop()
 
 if __name__ == "__main__":
     main()
