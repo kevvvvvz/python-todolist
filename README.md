@@ -14,21 +14,16 @@ A simple command-line to-do list manager written in Python. Tasks are saved to a
 
 ---
 
-## Install Dependencies
+## How to Run
 
-```bash
-pip install pandas
-```
+- Clone the repository
+- cd into the project folder
+- Install dependencies: `pip install pandas`
+- Make sure `todolist.csv` and `todolist.py` are in the same folder, then run `python todolist.py`
 
 ---
 
 ## Usage
-
-Make sure `todolist.csv` and `todolist.py` are in the same folder, then run:
-
-```bash
-python todolist.py
-```
 
 You'll be prompted to enter a number for each action:
 
@@ -58,3 +53,10 @@ Enter `4` to view the list, then enter the number of the task you want to mark d
 
 - The program exits after certain actions. Just re-run `todolist.py` to continue managing your list.
 - Do not open `todolist.csv` in Excel, as it may alter the `:` delimiter. Use a plain text editor if needed.
+
+---
+
+## Future Improvements
+
+- **Better navigation** - instead of the program exiting after each action, return the user to the main menu so the app can be used continuously without needing to re-run it.
+- **GUI interface** - build a graphical interface using a Python library like Tkinter (already imported in the project, will do later) to make the app more interactive and user-friendly.
